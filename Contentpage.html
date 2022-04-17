@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .contentbutton1 { 
+        height: 13px;
+  width: 4px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: #1D1D1D;
+    }
+    .contentbutton2 {
+        height: 13px;
+  width: 4px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: #C1C1C1;
+    }
+    .contentbutton3 {
+        height: 13px;
+  width: 4px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: #c1c1c1;
+    }
+    .TriangleButtonRight {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-left: 50px solid #555;
+        border-bottom: 25px solid transparent;
+    }
+    .TriangleButtonLeft {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-right: 50px solid #555;
+        border-bottom: 25px solid transparent;
+    }
+    </style>
+    <script>
+        function rightbtn (TriangleButtonRight) { 
+            //document.getElementById("contentiframe").src = 'Contentpage1.html';
+          //  alert("abcd");
+        window.location = 'Contentpage1.html';
+        }
+    </script>
+   <!-- <iframe id="contentiframe" src='Homecontent1.html' height="650px" width="100%" display="block"  frameborder="1" scrolling="no"
+    style="border:none; margin-left: 0; display: block;"  text-align="left" ></iframe> -->
+    <table class="contenttable2" border="1" style="border-collapse: collapse; width: 50%; height: 50px; margin-left: auto; margin-right: 50%; margin-top: 0%; position: absolute;"> 
+        <tbody>
+            <tr>
+                
+            </tr>
+    <tr>
+        <td style="text-align: right; width: 40%;">
+            <div class="TriangleButtonLeft" style="float: right;"></div> <!--onclick=""-->
+        </td>
+        <td style="text-align: center; width: 20%;">
+           <!-- <div class="triangle-left" style="width: 0; height: 0; border-top: 25px solid transparent;
+             border-right: 50px solid #555; border-bottom: 25px solid transparent; background-color: #00f;"></div> -->
+    <!--<button type="button" class="triangle-left" ></button> style="width: 0; height: 0; border-top: 25px solid transparent; border-right: 50px solid #555; border-bottom: 25px solid transparent;"-->
+    <button type="button" class="contentbutton1" style="margin: 5px; cursor: grab;"></button>
+    <button type="button" class="contentbutton2" style="margin: 5px; cursor: grab;"></button>
+    <button type="button" class="contentbutton3" style="margin: 5px; cursor: grab;"></button>
+        </td>
+        <td style="width: 40%;">
+        <div id="TriangleButtonRight" class="TriangleButtonRight" style="cursor: grab;" onclick="rightbtn()"></div> 
+        <script> $('div.TriangleButtonRight').click(function(){
+            rightbtn();
+        }); </script>
+        </td>
+    
+    </tr>
+    </tbody>
+    </table>
+
+</html>

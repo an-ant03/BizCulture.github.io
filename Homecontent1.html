@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .contenttable1 {
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    .Image {
+        width: 100%;
+        height: 100%;
+  display: block;
+    }
+    .contentbutton1 { 
+        height: 13px;
+  width: 4px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: #1D1D1D;
+    }
+    .contentbutton2 {
+        height: 13px;
+  width: 4px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: #C1C1C1;
+    }
+    .contentbutton3 {
+        height: 13px;
+  width: 4px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: #c1c1c1;
+    }
+    .TriangleButtonRight {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-left: 40px solid #555;
+        border-bottom: 20px solid transparent;
+    }
+    .TriangleButtonLeft {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-right: 40px solid #858585;
+        border-bottom: 20px solid transparent;
+    }
+    .sidebar {
+        position: fixed;
+        background-color: #1D1D1D;
+        width: 15%;
+        height: 100%;
+        left: 0;
+        padding-top: 17%;
+        top: 0;
+        transition: 0.4s;
+    }
+    .sidebar ul a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 65px;
+        font-size: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid black;
+        margin-left: auto;
+        padding-left: 40px;
+        box-sizing: border-box;
+        transition: 0.4s;
+    }
+    .sidebar li {
+        list-style: none;
+        margin-left: auto;
+    }
+    .sidebar ul {
+        left: 0%;
+        padding-left: 0%; 
+    }
+    .sidebar ul li {
+        transition: 0.4s;
+    }
+    .sidebar ul li a {
+        transition: 0.4s;
+    }
+    .sidebar ul li:hover a{
+        padding-left: 50px;
+    }
+    .sidebar ul li:hover {
+        color: #363636;
+        background-color: #363636;
+    }
+    .sidebar ul a i{
+        margin-right: 16px;
+    }
+    .sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+  text-decoration: none;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-top: 0;
+}
+#openbtndiv {
+    transition: margin-left .5s; 
+  padding: 20px;
+  margin-left: 14%;
+  width: 2.5%;
+  position:fixed; 
+  margin-top: -15%;
+}
+</style>
+<head>
+    <title>
+        Home Page
+    </title>
+    <script src="https://kit.fontawesome.com/e83133f8d9.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="background-color: #F5F5F5;">
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul id="list">
+            <li id="list">
+                <a href="Homecontent1.html" id="list"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li id="list">
+                <a href="LoginAndSignup.html" id="list"><i class="fa-solid fa-user"></i>Login</a>
+            </li>
+            <li id="list">
+                <a href="about us page.html" id="list"><i class="fa-solid fa-users"></i>About us</a>
+            </li>
+        </ul>
+    </div>
+    <div id="openbtndiv">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+    <script>
+        function openNav() {
+  document.getElementById("sidebar").style.width = "15%";
+  document.getElementById("openbtndiv").style.marginLeft = "14%";
+  document.getElementById("list").style.display = "block";
+        }
+        function closeNav() {
+  document.getElementById("sidebar").style.width = "0";
+  document.getElementById("openbtndiv").style.marginLeft = "0";
+  document.getElementById("list").style.display = "none";
+        }
+        </script>
+    <table border="0" style="border-collapse: collapse; width: 42.00%; height: 119px;
+     margin-bottom: 90px; margin-left: 24%; margin-top: 1%; top: 0; position: absolute;">
+    <tbody>
+    
+    <tr>
+    <td style="width: 38%;"> 
+        <img src="C:\Users\anant\OneDrive\HTML\HTML\DD Term 2 project\DD Logo Final cropped.png"
+         width="150" height="150" alt="Logo" style="display: block; margin-left: 0; float: right;"></td>
+        <td><span style="font-family: helvetica, arial, sans-serif; text-align: left;">
+            <strong><span style="font-size: 70px; text-align: left;"> &nbsp; BizCulture
+    </span></strong></span></td> </td>
+    </tr>
+    
+    </tbody>
+    </table>
+
+<table class="contenttable1" border="0" style="border-collapse: collapse; width: 50%; height: 500px; left: 50%; margin-top: 15%;"> <!-- left: 50%;-->
+<tbody>
+<tr>
+    <td> <!-- style="width: 50%; height: 200px;"-->
+<img class="Image" src="C:\Users\anant\OneDrive\HTML\HTML\DD Term 2 project\cross-cultural-training-japan-business.png" alt="Japan Image">
+    </td>
+</tr>
+<tr> 
+   <td style="height: 75px">
+&nbsp;
+</td> 
+<tr>
+    <td  style="font-size: 20px;">
+        Like many countries across the world, Japan is a country which is rich in cultural diversity.
+         With 'Shinto' and 'Buddhism' being the primary religions of Japan,
+          Japanese culture is ancient and it is filled with various rites and traditions.
+           The culture of Japan has changed greatly over the millenia, from its prehistoric 'Jōmon Period',
+            to its contemporary modern culture, which has influences from Asia and other regions of the world.
+             This culture also reflects on the way that business is done in the country,
+              which is why this website aims to guide you about Japanese culture in business,
+               with information on basic Japanese etiquette as well as business practices. 
+    </td>
+</tr>
+</tr>
+<tr> 
+    <td style="height: 50px">
+ &nbsp;
+ </td>
+</table>
+<table class="contenttable2" border="0" style="border-collapse: collapse; width: 50%; height: 50px; left: 50%; margin-left: auto; margin-right: auto;"> 
+    <tbody>
+        <tr>
+            
+        </tr>
+<tr>
+    <td style="text-align: right; width: 40%;">
+        <div onclick="" class="TriangleButtonLeft" style="float: right;"></div>
+    </td>
+    <td style="text-align: center; width: 20%;">
+       
+<a href="Homecontent1.html"><button type="button" class="contentbutton1" style="margin: 5px;"></button></a>
+<a href="Contentpage1.html"><button type="button" class="contentbutton2" style="margin: 5px;"></button></a>
+<a href="Contentpage2.html"><button type="button" class="contentbutton3" style="margin: 5px;"></button></a>
+    </td>
+    <td style="width: 40%;">
+        <a href="Contentpage1.html"><div id="TriangleButtonRight" class="TriangleButtonRight" onclick="rightbtn()"></div> </a>
+    </td>
+
+</tr>
+</tbody>
+</table> 
+<table>
+    
+</table>
+</body>
+</html>

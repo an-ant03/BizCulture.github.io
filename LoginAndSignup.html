@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    .sidebar {
+        position: fixed;
+        background-color: #1D1D1D;
+        width: 15%;
+        height: 100%;
+        left: 0;
+        padding-top: 17%;
+        top: 0;
+        transition: 0.4s;
+    }
+    .sidebar ul a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 65px;
+        font-size: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid black;
+        margin-left: auto;
+        padding-left: 40px;
+        box-sizing: border-box;
+        transition: 0.4s;
+    }
+    .sidebar li {
+        list-style: none;
+        margin-left: auto;
+    }
+    .sidebar ul {
+        left: 0%;
+        padding-left: 0%; 
+    }
+    .sidebar ul li {
+        transition: 0.4s;
+    }
+    .sidebar ul li a {
+        transition: 0.4s;
+    }
+    .sidebar ul li:hover a{
+        padding-left: 50px;
+    }
+    .sidebar ul li:hover {
+        color: #363636;
+        background-color: #363636;
+    }
+    .sidebar ul a i{
+        margin-right: 16px;
+    }
+    .sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+  text-decoration: none;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+#openbtndiv {
+    transition: margin-left .5s; 
+  padding: 20px;
+  margin-left: 14%;
+  width: 2.5%;
+}
+  </style>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Sign Up
+        </title>
+        <script src="https://kit.fontawesome.com/e83133f8d9.js" crossorigin="anonymous"></script>
+    </head>
+<body style="background-color: #F5F5F5;">
+  <div class="sidebar" id="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul id="list">
+        <li id="list">
+            <a href="Homecontent1.html" id="list"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li id="list">
+            <a href="LoginAndSignup.html" id="list"><i class="fa-solid fa-user"></i>Login</a>
+        </li>
+        <li id="list">
+            <a href="about us page.html" id="list"><i class="fa-solid fa-users"></i>About us</a>
+        </li>
+    </ul>
+</div>
+<div id="openbtndiv">
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+</div>
+<script>
+  function openNav() {
+document.getElementById("sidebar").style.width = "15%";
+document.getElementById("openbtndiv").style.marginLeft = "14%";
+document.getElementById("list").style.display = "block";
+  }
+  function closeNav() {
+document.getElementById("sidebar").style.width = "0";
+document.getElementById("openbtndiv").style.marginLeft = "0";
+document.getElementById("list").style.display = "none";
+  }
+  </script>
+  <table border="0" style="border-collapse: collapse; width: 65.00%; height: 119px;
+   margin-bottom: 100px; margin-left: 20%; margin-top: 1%; top: 0; position: absolute;">
+<tbody>
+
+<tr>
+<td style="width: 20%;"> 
+    <img src="C:\Users\anant\OneDrive\HTML\HTML\DD Term 2 project\DD Logo Final cropped.png"
+     width="150" height="150" alt="Logo" style="display: block; margin-left: 0; float: right;"></td>
+    <td><span style="font-family: helvetica, arial, sans-serif; text-align: left;">
+        <strong><span style="font-size: 70px; text-align: left;"> &nbsp; Login - BizCulture
+</span></strong></span></td> </td>
+</tr>
+
+</tbody>
+</table> 
+  <table style="width: 27%; height: 420px; position: absolute; top: 5%; left: 37%; border: 1px solid black; border-collapse: collapse; background-color: #F6F6F6; margin-top: 10%;">
+    <tbody>
+    <tr>
+      <td style="font-size: 40px; height: 10%; text-align: center; color: #0000ff;">
+        Login
+      </td>
+    </tr>
+    <tr>
+      <td>
+    <div class="Signup-div" style="margin-left: 22%; top: 1%;"> 
+      <input style="background-color: #DCE4EC; height: 40px; width: 230px; border-radius: 20px; margin-bottom: 10px;" type="email" id="emaillogin" placeholder="Email..." />
+      <br>
+      <input style="background-color: #DCE4EC; height: 40px; width: 230px; border-radius: 20px;" type="password" id="passwordlogin" placeholder="Password..." />
+      <br>
+      <button id="login" style="margin-left: 27.5%; margin-top: 5px;">Login</button>
+    </div>
+    <hr style="background-color: black; left: 50px; width: 75%;">
+      </td>
+    </tr>
+    <tr>
+      <tr>
+        <td style="font-size: 25px; text-align: center;">
+          Don't have an account?
+          <br>
+          <span style="font-size: 40px; color: #0000ff;">Sign Up</span>
+        </td>
+      </tr>
+      <td>
+      <div style="margin-left: 22%; top: 1%;">
+      <input style="background-color: #DCE4EC; height: 40px; width: 230px; border-radius: 20px; margin-bottom: 10px;" type="email" id="email" placeholder="Email..."/>
+      <br>
+      <input style="background-color: #DCE4EC; height: 40px; width: 230px; border-radius: 20px;" type="password" id="password" placeholder="Password...">
+      <br>
+      <button style="margin-left: 27.5%; margin-top: 5px; " id="signup">Sign Up</button>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+  </table>
+  <div style="width: 23%; margin-top: 20%; margin-left: 68%; font-size: 30px;">Grow Business Culturally!</div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAumHG5EdpbqNsWt1JCdtG9G6aDQNjoifU",
+          authDomain: "dd-term-2-login-page.firebaseapp.com",
+          projectId: "dd-term-2-login-page",
+          storageBucket: "dd-term-2-login-page.appspot.com",
+          messagingSenderId: "619340628306", 
+          appId: "1:619340628306:web:d28eddfa24e3e36b13fa8b"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+
+        document.getElementById("signup").addEventListener('click' , function(){
+            const email = document.getElementById("email").value
+            const password = document.getElementById("password").value
+
+            createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    // ...
+    alert("User Registered")
+    window.location = 'Homecontent1.html';
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+    alert(errorCode + errorMessage)
+  });
+        })
+
+
+        document.getElementById("login").addEventListener('click' , function(){
+          const email1 = document.getElementById("emaillogin").value
+          const password1 = document.getElementById("passwordlogin").value
+          signInWithEmailAndPassword(auth, email1, password1)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    alert("Successfully logged in")
+    // ...
+    window.location = 'Homecontent1.html';
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorCode + errorMessage)
+  });
+        })
+
+      </script>
+</body>
+  
+</html>
